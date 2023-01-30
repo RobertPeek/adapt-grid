@@ -1,0 +1,78 @@
+    {
+        "_id": "c-30",
+        "_parentId": "b-15",
+        "_type": "component",
+        "_component": "grid",
+        "_classes": "",
+        "_layout": "full",
+        "title": "",
+        "displayTitle": "",
+        "body": "",
+        "instruction": "",
+        "_columns": 2,
+        "_items": [
+          {
+            "_position": {
+              "_columnStart": 1,
+              "_columnEnd": 3,
+              "_rowStart": 2,
+              "_rowEnd": 2,
+              "_vPosition": "top",
+              "_hPosition": "left"
+            },
+            "_text": {
+              "body": "<p>Item 1 spanned across the whole width.</p>",
+              "_size": null,
+              "_lineHeight": null,
+              "_color": "",
+              "_background": ""
+            },
+            "_graphic": {
+              "_src": "",
+              "alt": ""
+            }
+          },
+          {
+            "_position": {
+              "_columnStart": 1,
+              "_columnEnd": 2,
+              "_rowStart": 2,
+              "_rowEnd": 3,
+              "_vPosition": "top",
+              "_hPosition": "left"
+            },
+            "_text": {
+              "body": "<p>Item 2 spanned half the width of the bottom row on the left.</p>",
+              "_size": null,
+              "_lineHeight": null,
+              "_color": "",
+              "_background": ""
+            },
+            "_graphic": {
+              "_src": "",
+              "alt": ""
+            }
+          },
+          {
+            "_position": {
+              "_columnStart": 2,
+              "_columnEnd": 3,
+              "_rowStart": 2,
+              "_rowEnd": 3,
+              "_vPosition": "top",
+              "_hPosition": "left"
+            },
+            "_text": {
+              "body": "<p>Item 3 spanned half the width of the bottom row on the right.</p>",
+              "_size": null,
+              "_lineHeight": null,
+              "_color": "",
+              "_background": ""
+            },
+            "_graphic": {
+              "_src": "",
+              "alt": ""
+            }
+          }
+        ]
+    }

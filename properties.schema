@@ -1,0 +1,185 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_columns": {
+      "type": "number",
+      "required": true,
+      "title": "Columns",
+      "inputType": "Number",
+      "default": 1,
+      "validators": ["number"],
+      "help": "This value determines the number of columns within the grid."
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "_position": {
+            "type": "object",
+            "required": false,
+            "title": "Position",
+            "properties": {
+              "_columnStart": {
+                "type": "number",
+                "required": true,
+                "title": "Column Start",
+                "inputType": "Number",
+                "default": 1,
+                "validators": ["number"],
+                "help": "This value determines which column's grid line the item starts."
+              },
+              "_columnEnd": {
+                "type": "number",
+                "required": true,
+                "title": "Column End",
+                "inputType": "Number",
+                "default": 2,
+                "validators": ["number"],
+                "help": "This value determines which column's grid line the item ends."
+              },
+              "_rowStart": {
+                "type": "number",
+                "required": true,
+                "title": "Row Start",
+                "inputType": "Number",
+                "default": 1,
+                "validators": ["number"],
+                "help": "This value determines which row's grid line the item starts."
+              },
+              "_rowEnd": {
+                "type": "number",
+                "required": true,
+                "title": "Row End",
+                "inputType": "Number",
+                "default": 2,
+                "validators": ["number"],
+                "help": "This value determines which row's grid line the item ends."
+              },
+              "_vPosition": {
+                "type": "string",
+                "required": false,
+                "default": "top",
+                "title": "Vertical Position",
+                "inputType": {"type": "Select", "options": ["top", "middle", "bottom"]},
+                "validators": []
+              },
+              "_hPosition": {
+                "type": "string",
+                "required": false,
+                "default": "left",
+                "title": "Horizontal Position",
+                "inputType": {"type": "Select", "options": ["left", "center", "right"]},
+                "validators": []
+              }
+            }
+          },
+          "_text": {
+            "type": "object",
+            "required": false,
+            "title": "Text",
+            "properties": {
+              "body": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Body",
+                "inputType": "TextArea",
+                "validators": [],
+                "translatable": true
+              },
+              "_size": {
+                "type": "number",
+                "required": false,
+                "title": "Font Size",
+                "inputType": "Number",
+                "default": null,
+                "validators": []
+              },
+              "_lineHeight": {
+                "type": "number",
+                "required": false,
+                "title": "Font Line Height",
+                "inputType": "Number",
+                "default": null,
+                "validators": []
+              },
+              "_color": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Text Colour",
+                "inputType": "ColourPicker",
+                "validators": []
+              },
+              "_background": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Background Colour",
+                "inputType": "ColourPicker",
+                "validators": []
+              }
+            }
+          },
+          "_graphic": {
+            "type": "object",
+            "required": false,
+            "title": "Graphic",
+            "properties": {
+              "_src": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Asset:image",
+                "validators": []
+              },
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Alt text",
+                "inputType": "Text",
+                "validators": [],
+                "help": "This text becomes the graphic's alt attribute.",
+                "translatable": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

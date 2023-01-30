@@ -1,0 +1,16 @@
+{
+  "name": "adapt-grid",
+  "version": "1.0.0",
+  "framework": ">=5.14.0",
+  "homepage": "https://github.com/RobertPeek/adapt-grid",
+  "issues": "https://github.com/RobertPeek/adapt-grid/issues",
+  "displayName" : "Grid",
+  "component" : "grid",
+  "description": "Component which displays items in a grid",
+  "main": "/js/adapt-grid.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}
